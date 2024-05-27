@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <meta name="robots" content="index, follow">
+    <title> Grupo Casas </title>
+    <meta name="description"
+        content="Grupo Casas, Rua Sargento Waldir Correia, 306 - Boa Viagem, CEP 13201-010, Brazil">
+    <meta name="keywords" content="Grupo Casas, Rua Sargento Waldir Correia, 306 - Boa Viagem, CEP 13201-010, Brazil">
+    <meta name="author" content="Grupo Casas Hoteis">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900&amp;display=swap"
+        rel="stylesheet">
+    <script src="../../kit.fontawesome.com/c597f1ee3e.js" crossorigin="anonymous"></script>
+    <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+    <script src="../../kit.fontawesome.com/c597f1ee3e.js" crossorigin="anonymous"></script>
+    <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="icon" href="c:\Users\victo\Downloads\WhatsApp Image 2024-04-30 at 10.46.43.jpeg" type="image/x-icon"> <!---imagem
+    GetYourGuide Analytics -->
+    <script async="" defer="" src="../../widget.getyourguide.com/dist/pa.umd.production.min.js"
+        data-gyg-partner-id="KACJMIV"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GQPP52LWDP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GQPP52LWDP');
+    </script>
+
+    <meta property="og:title" content="Grupo Casas Hoteis - Boa Viagem">
+    <meta property="og:image"
+        content="../../cf.bstatic.com/xdata/images/hotel/max1024x768/286207819_k%3D44f0511ca39199f65b6369d453c651186a439c1b7831c9cb3d9cc15bbc76c8d1%26o%3D%26hp%3D1.jpg">
+    <meta property="og:url" content="https://convenience.hotelrent.top/"><!---link do site---->
+</head>
+
+<body style="width:100%; margin: 0px; padding:0px; background-color: #ffffffd2;"> <!---backgroud--->
+
+    <style>
+        header {
+            position: fixed;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(93, 92, 92);
+            z-index: 100;
+        }
+
+        h1 {
+            font-size: 35px;
+            color: white;
+            font-family: Rubik;
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        .content-body {
+            padding-top: 80px;
+            font-family: Rubik, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+
+        }
+
+        .top-head-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .top-info {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+
+        }
+
+        .my-body {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        footer {
+            height: 100px;
+            background-color: black;
+            bottom: 0;
+            color: white;
+            padding: 20px;
+            font-family: Rubik, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #5191fa;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .headertext {
+            color: white;
+
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        /* Carousel */
+        * {
+            box-sizing: border-box
+        }
+        .image-container {
+            display: flex;
+            gap: 50px; /* espaço entre as imagens */
+        }
+        .image-container img {
+            width: 150px; /* largura fixa */
+            height: 150px; /* altura fixa */
+            object-fit: cover; /* ajusta a imagem para preencher o contêiner */
+        }        
+        
+        .imageslide {
+            display: none;
+            height: 500px;
+        }
+
+        img {
+            vertical-align: middle;
+            border-radius: 20px;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+
+        .image-carousel {
+
+            position: relative;
+            margin: auto;
+
+
+        }
+
+        .slide-img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0px;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .desktop-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .imghorizontal{
+            width: 100%;
+            
+            height:200px ; /* Mantém a proporção da imagem */
+            display: block; /* Remove espaço extra ao redor da imagem */
+        }    
+        .column {
+            width: 100%;
+        }
+        .pulo:hover{
+            transform: scale(1.1);
+        }
+           
+        .checkavail {
+
+            text-align: start;
+            padding: 10px;
+            align-items: center;
+            border-radius: 10px;
+            margin: auto;
+            display: block;
+
+            font-weight: bold;
+            background-color: black;
+            color: white;
+
+        }
+
+        .checkavail p {
+            color: white;
+            font-size: 25px;
+
+        }
+
+        #reserveopt {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div#reserveopt input,
+        div#reserveopt select,
+        div#reserveopt.btn {
+            border-radius: 2px !important;
+            border: 0px !important;
+            margin-right: 5px;
+            padding: 8px;
+        }
+
+
+        .reserverow {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            height: 40px;
+        }
+
+        .avail-form {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .headertext {
+            font-family: Rubik, Helvetica, Arial, sans-serif;
+            color: white;
+        }
+
+        .top-info {
+            text-align: center;
+
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 5px;
+            height: 30px;
+            width: 100%;
+        }
+
+        select {
+            border-radius: 5px;
+            padding: 5px;
+            height: 30px;
+            width: 100%;
+        }
+
+        .searchbutton {
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+
+        }
+
+        .searchbutton:hover {
+
+            background-color: #2877f8;
+
+            color: white;
+
+        }
+
+        .bookbutton {
+            border-radius: 5px;
+            padding: 5px;
+            height: 40px;
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            width: 100%;
+            display: block;
+            width: 100%;
+            margin: 15px 0px 15px 0px;
+
+        }
+
+        .bookbutton:hover {
+
+            background-color: #000000;
+
+            color: white;
+
+        }
+
+        .button:hover {
+
+            background-color: #000000;
+
+            color: white;
+
+        }
+
+        .s-item {
+            margin: 5px;
+            min-width: 130px;
+        }   
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .description {
+            text-align: center; /* Centraliza o texto */
+            margin: 10px; /* Define as margens */
+            height: 100%; /* Define a altura */
+            font-family: Arial, sans-serif; /* Define a fonte */
+
+        }
+        .lang-dropdown {
+
+            width: 60px;
+
+        }
+
+        .lang-dropdown-select {
+            height: 100%;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-opts {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');/*TAAAAA AQUI
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%; /* Isso cria a forma redonda */
+            overflow: hidden; /* Esconde qualquer conteúdo que possa transbordar */
+        }
+
+        .header-opts a {
+            display: block; /* Garante que o link preencha o contêiner */
+            width: 100%;
+            height: 100%;
+            text-decoration: none; /* Remove o sublinhado do link */
+            border: none; /* Remove qualquer borda */
+            outline: none; /* Remove a borda de foco padrão */
+        }
+        .header-opts:hover {
+            transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% */
+        }         
+        
+        .lang-icon {
+            width: 50px;
+            border-radius: 0px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+        }
+        .logo-icon:hover {
+            transform: scale(1.2);
+        }      
+        .header-br {
+            display: flex;
+            flex-direction: row;
+            padding: 0px 10px 0px 20px;
+
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .header-frase{
+            align-items: right;
+            margin-left: auto;
+            margin-right: 10px;
+            color: #ccc;
+        }     
+        
+        .cookie-locker {
+            height: 200px;
+            width: 100%;
+            position: fixed;
+            display: block;
+            background-color: rgb(45, 45, 45);
+            color: grey;
+            z-index: 55;
+            bottom: 0px;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+
+        .cookie-options {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .buttoncookie {
+
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 10px;
+            text-decoration: none;
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: none;
+            margin: 15px;
+            cursor: pointer;
+
+        }
+
+        .cookieA {
+            background-color: #5191fa;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .cookieD {
+            background-color: #fab951;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+
+            .checkavail {
+                display: block;
+            }
+
+            .avail-form {
+                flex-direction: column;
+            }
+
+            .desktop-row {
+                flex-direction: column;
+            }
+
+            .searchbutton {
+                margin-top: 20px;
+            }
+
+            .headerbutton {
+                display: none;
+            }
+
+            .headertext {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <header>
+        <div class="header-br"> 
+            <div style="display: flex; flex-direction:row; align-items: center; margin: 5px">
+                <a href="#Bem vindo ao grupo casas" ><img class="logo-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1VGLg-T7TQ7aj242nYr_70yqZR4hpqFkVuMo5QNf6ew&s"></a>
+                <div style="width:25px"></div>
+                <p class="headertext"></p>
+                <center><h1>GRUPO POUSADAS CASA</h1></center>
+                <a href="#casa da esquina"><img class="logo-icon" src="c:\Users\david\Downloads\casa_esquina.jpg"></a>
+                <a href="#casa do meio"><img class="logo-icon" src="c:\Users\david\Downloads\casa_meio.jpg"></a>
+                <a href="#casa recife"><img class="logo-icon" src="c:\Users\david\Downloads\casa_recife.jpg"></a>
+                <a href="#casa do aeroporto"><img class="logo-icon" src="c:\Users\david\Downloads\casa_aero.jpg"></a>
+              </div>
+              <div class="header-frase">
+                <h3>(81) 98473-9506  </h3>
+              </div>
+              
+              <div class="header-opts">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5581984739506&text=Ol%C3%A1%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20pousadas.">
+                </a>
+       
+            </div>       
+            </div>
+    </header>
+    <div class="content-body">
+        <section class="top-head" 
+            <div class="top-head-overlay">
+                <div class="top-info">
+                    <span style="color:rgb(4, 0, 0);">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                    </span>
+                    <br id="Bem vindo ao grupo casas">
+                    
+        
+            
+                <div class="imghorizontal">
+                    <img
+                        src="https://assets.folhavitoria.com.br/images/a86fed70-74bf-0135-9f10-6231c35b6685--minified.jpg"><!--imagem fachada-->
+                        <h2 id="Bem vindo ao grupo casas"> Bem vindo ao Grupo Casas </h2>
+                        <h3> Recife - PE</h3>
+                    </div>
+            
+        
+             <br><br><br><br><br>
+        
+             <div class="desktop-row">
+                <div class="column">
+                    <img
+                        src="https://hotelariaweb.com/wp-content/uploads/2021/04/24011969647_ad3396a524_h-1024x683.jpg">
+                </div>
+                <div style="width:25px"></div>
+                <div style="height:25px"></div>
+                <div class="column">
+                    <img
+                        src="https://media.istockphoto.com/id/1336116827/pt/foto/suitcase-delivered-standing-in-hotel-room-concept-of-hotel-service-and-travel.jpg?s=612x612&w=0&k=20&c=3lap48izxc67DH7vg9P5j3g0SrSIRwyiagut_-ZgoZw=">
+                </div>
+            </div>
+            <div style="height:25px"></div>
+            <div class="desktop-row">
+                <div class="column">
+                    <img
+                        src="https://img.freepik.com/fotos-gratis/bela-piscina-exterior-de-luxo-no-hotel-e-resort_74190-7433.jpg">
+                </div>
+                <div style="width:25px"></div>
+                <div style="height:25px"></div>
+                <div class="column">
+                    <img
+                        src="https://img.freepik.com/fotos-gratis/piscina_74190-1977.jpg">
+                </div>
+            </div>
+            <div class="pulo">
+            <a class="bookbutton"
+                href="https://www.instagram.com/grupopousadascasa?igsh=bmVrc3EyMGF3bWlz&amp;label=summerend"
+                target="_blnak">
+                instagram </a>
+            </div>
+                <section class="location">
+                <span style="display: flex; flex-direction: row; align-items: center;">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <div style="width:15px"></div>
+                </span>
+            
+                <br><br><br>
+                
+                <h2 id="casa da esquina">Casa da esquina</h2>
+                <h4> A Casa da Esquina é um refúgio aconchegante situado em uma localização tranquila, perfeita para quem busca relaxar e fugir da rotina. Com quartos decorados com bom gosto, áreas comuns acolhedoras e um atendimento personalizado, aqui você encontrará o ambiente ideal para descansar e se reconectar.</h4>
+                
+                <br><br>
+                
+                <div class="image-container">           
+                    <img src="c:\Users\david\Downloads\casa_esquina.jpg" alt="">    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.663648608829!2d-34.914394325873616!3d-8.135683081454445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e322115b773%3A0xb4ef00c54f8a0b3a!2sR.%20Srg.%20Waldir%20Correia%2C%20306%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051030-580!5e0!3m2!1sen!2sbr!4v1715708348793!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  
+                </div>
+                <br><br><br><br><br>    
+                
+                <h2 id="casa do aeroporto">Casa do aeroporto</h2>
+                <h4>Para aqueles que valorizam a conveniência, a Casa do Aeroporto é a escolha ideal. Localizada a poucos minutos do aeroporto, nossa pousada oferece uma estadia prática e confortável, com fácil acesso a transportes, restaurantes e outras comodidades. Perfeita para viajantes a negócios ou lazer que precisam de agilidade sem abrir mão do conforto.</h4>
+                
+                <br><br>
+                
+                <div class="image-container">    
+                    <img src="c:\Users\david\Downloads\casa_aero.jpg" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6965684484753!2d-34.919975629658936!3d-8.13234186348207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e30d22dc21f%3A0x967ded4847a131c2!2sR.%20Bar%C3%A3o%20de%20Souza%20Le%C3%A3o%2C%201661%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051210-080!5e0!3m2!1sen!2sbr!4v1715708776216!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <br><br><br><br><br>
+                
+                <h2 id="casa do meio">Casa do meio</h2>
+                <h4>Localizada no coração da cidade, a Casa do Meio é a nossa pousada mais central. Rodeada por pontos turísticos, lojas e vida noturna vibrante, esta pousada é ideal para os hóspedes que desejam explorar tudo o que a cidade tem a oferecer. Desfrute de quartos modernos e bem equipados, além de um atendimento caloroso que fará você se sentir em casa.</h4>
+
+                <br><br>
+                
+                <div class="image-container">
+                    <img src="c:\Users\david\Downloads\casa_meio.jpg" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.667474095874!2d-34.91470572587359!3d-8.135294881449695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e31880bfe09%3A0x36187a771646905f!2sR.%20Dez%20de%20Julho%2C%20399%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051030-570!5e0!3m2!1sen!2sbr!4v1715708851606!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                </div>
+                
+                <br><br><br><br><br> 
+                
+                <h2 id="casa recife">Casa recife</h2>
+                <h4>Descubra a charmosa Casa Recife, uma pousada acolhedora situada em uma área vibrante e culturalmente rica. Localizada em uma região central de Recife, nossa pousada oferece fácil acesso a diversos pontos turísticos, restaurantes e opções de entretenimento, proporcionando uma estadia confortável e conveniente para todos os hóspedes.</h4>
+                
+                <br><br>
+                
+                <div class="image-container">
+                <img src="c:\Users\david\Downloads\casa_recife.jpg" alt="">  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7669794120716!2d-34.910173425873765!3d-8.125190881325702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e4b3c8ac38d%3A0xacae44a7690da075!2sR.%20Jonathas%20de%20Vasconcelos%2C%20445%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051021-140!5e0!3m2!1sen!2sbr!4v1715708892648!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+
+            </section>
+            <br><br><br><br>
+            <section class="attractions">
+                <h2>
+                  Atividades Turísticas</h2>
+                <div data-gyg-widget="auto" data-gyg-partner-id="KACJMIV"></div>
+            </section>
+        </div>  
+        <footer>
+            <li><a href="https://api.whatsapp.com/send?phone=5581984739506&text=Ol%C3%A1%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20pousadas." target="_blank">
+                    Contato </a></li>
+            <br>
+            <li><a href="https://api.whatsapp.com/send?phone=5581984739506&text=Ol%C3%A1%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20pousadas." target="_blank">
+                    Privacidade </a></li>
+        </footer>
+    </div>
+
+
+
+    <section class="cookies">
+        <div id="coockie-locker" class="cookie-locker">
+            <div clas="headseparator"></div>
+            <p>
+
+                Usamos cookies e tecnologias semelhantes para ajudar a personalizar conteúdos, adaptar e avaliar anúncios e oferecer uma experiência melhor. Ao clicar em OK ou ativar uma opção em Preferências de cookies, você concorda com isso, conforme descrito em nossa Política de Cookies. Para alterar as preferências ou retirar o consentimento, atualize suas Preferências de cookies: <a target="_blank" href="privacy">
+
+                    Cookies &amp; Privacy </a>
+            </p>
+            <div class="cookie-options">
+                <button class="buttoncookie cookieD" onclick="denyCookies()">
+                    Recusar
+                </button>
+                <button class="buttoncookie cookieA" onclick="acceptCookies()">
+                    Aceitar
+                </button>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            function denyCookies() {
+                document.getElementById('coockie-locker').remove(); 
+                alert("Você recusou o uso de cookies.");
+            }
+
+            function acceptCookies() {
+                fetch("../acceptcookies.php");
+                document.getElementById('coockie-locker').remove();
+
+            }
+        </script>
+
+    </section>
+
+
+</body>
+
+</html>
